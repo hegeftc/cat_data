@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Cat Data{% endblock %}
+
+{% block body %}
+    <div>
+        <img src="{{ cat_data.url }}" alt="Cat Image" style="width: 800px; height: auto" >
+        <h2>{{ cat_data.breeds[0].name }}</h2>
+        <p>{{ cat_data.breeds[0].description }}</p>
+    </div>
+{% endblock %}
